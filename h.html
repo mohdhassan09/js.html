@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style type="text/css">
+    #alok{
+        background-color: brown;
+        
+        height: 100;
+        width: 100; 
+    }
+
+</style>
+<script>
+$(document).ready(function(){
+  $(document).ready(function(){
+   $("button").click(function(){
+   $("#Alok1").show(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(300);
+    $("#Alok1").css("background-color","black");
+    $(this).attr("disabled",true);
+     $("#Alok1").attr("disabled",false);
+
+   $("Alok").hide.css(function(){
+      $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(300);
+    $("#Alok").css("background-color","green");
+    $(this).attr("disabled",true);
+     $("#Alok").attr("disabled",false);
+});
+});
+}); 
+});
+});
+
+
+</script>
+</head>
+<body>
+
+<p>Demonstrate fadeIn() with different parameters.</p>
+
+<div id="Alok1"><button>Show</button></div><br><br>
+<div id="alok"> </div>
+
+<!-- <button>Show</button><br><br> -->
+<div id="div1" style="width:220px;height:220px;display:none;background-color:red;"><img src="home.png" height="180px" width="180px"></div><br><br>
+<div id="div2" style="width:220px;height:220px;display:none;background-color:green;"> <img src="home.png" height="180px" width="180px"></div><br>
+<div id="div3" style="width:220px;height:220px;display:none;background-color:blue;"> <img src="home.png" height="180px" width="180px"></div>
+
+<br><br>
+<div id="Alok"><button>Hide</button></div>
+</body>
+</html>
